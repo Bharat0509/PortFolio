@@ -1,0 +1,81 @@
+header {
+    height: 45rem;
+    padding-top: 5rem;
+    overflow: hidden;
+}
+
+.header__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* ================CTA===================== */
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+
+/* =====================Header Socials================= */
+.header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+.header__socials::after {
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+/* =================ME=================== */
+.me {
+    background:linear-gradient(90deg,#2b1f7900, #1261c3c9,#1861a500);
+    width: 24rem;
+    height: 23rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 2.5rem 1.5rem 1rem 1rem;
+}
+
+/* ===========SCROLL DOWN=============== */
+.scroll__down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 200;
+    font-size: .9rem;
+
+}
+
+/* ===================MEDIA QURIES (MEDIUM DEVICES)======== */
+@media screen and (max-width:1024px) {
+    header {
+        height: 120vh;
+    }
+}
+
+/* ===================MEDIA QURIES (SMALL DEVICES)======== */
+@media screen and (max-width:600px) {
+    header {
+        height: 120vh;
+    }
+    .header__socials,.scroll__down{
+        display: none;
+    }
+
+
+}
