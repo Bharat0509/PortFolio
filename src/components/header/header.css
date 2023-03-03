@@ -39,7 +39,7 @@ header {
 
 /* =================ME=================== */
 .me {
-    background:linear-gradient(90deg,#2b1f7900, #1261c3c9,#1861a500);
+    background: linear-gradient(90deg, #2b1f7900, #1261c3c9, #1861a500);
     width: 24rem;
     height: 23rem;
     position: absolute;
@@ -73,7 +73,8 @@ header {
     header {
         height: 120vh;
     }
-    .header__socials,.scroll__down{
+
+    .header__socials, .scroll__down {
         display: none;
     }
 

@@ -38,7 +38,12 @@ body {
     background-color: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
-    background-image: url(../src//assets/bg-texture.png);
+    /* background-image: url(../src//assets/bg-texture.png); */
+    background-color: #1F1F38;
+    /* opacity: 0.7; */
+    background-image: linear-gradient(45deg, #2a2a63 50%, #262647 50%);
+    background-size: 8px 8px;
+
 }
 
 /* *********************GENERAL STYLES***********************/
@@ -54,69 +59,82 @@ h1, h2, h3, h4, h5 {
 h1 {
     font-size: 2.5rem;
 }
-section{
+
+section {
     margin-top: 8rem;
     /* height: 100vh; */
 }
-section>h2,section>h5{
+
+section>h2, section>h5 {
     text-align: center;
     color: var(--color-light);
 }
-section>h2{
+
+section>h2 {
     color: var(--color-primary);
     margin-bottom: 3rem;
 }
-.text-light{
+
+.text-light {
     color: var(--color-light);
 }
-a{
+
+a {
     color: var(--color-primary);
     transition: var(--transition)
 }
-a:hover{
+
+a:hover {
     color: var(--color-white);
 }
-.btn{
+
+.btn {
     width: max-content;
     display: inline-block;
     color: var(--color-primary);
     padding: .75rem 1.2rem;
     border-radius: .4rem;
     cursor: pointer;
-    border:1px solid var(var(--color-primary));
+    border: 1px solid var(var(--color-primary));
     transition: var(--transition);
 
 }
-.btn:hover{
+
+.btn:hover {
     background: var(--color-white);
-    color:var(--color-bg);
+    color: var(--color-bg);
     border-color: transparent;
 }
-.btn-primary{
+
+.btn-primary {
     background: var(--color-primary);
-    color:var(--color-bg)
+    color: var(--color-bg)
 }
-img{
+
+img {
     display: block;
     width: 100%;
     object-fit: cover;
 }
+
 /* ==============MEDIA QURIES (MEDIUM DEVICES)================ */
 @media screen and (max-width:1024px) {
-    .container{
+    .container {
         width: var(--container-width-md);
     }
-    section{
+
+    section {
         margin-top: 6rem;
     }
 }
 
 /* ==============MEDIA QURIES (SMALL DEVICES)================ */
 @media screen and (max-width:600px) {
-    .container{
+    .container {
         width: var(--container-width-sm);
     }
-    section>h2{
-      margin-bottom: 2rem
+
+    section>h2 {
+        margin-bottom: 2rem
     }
 }

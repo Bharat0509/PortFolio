@@ -20,7 +20,7 @@ const Testimonials = () => {
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
       >
-        {TestimonialsData.map((data) =>
+        {/* {TestimonialsData ? (TestimonialsData.map((data) =>
           <SwiperSlide><article className='testimonial'>
             <div className="client_avatar">
               <img src={data.Avatar} alt="avatar" />
@@ -30,7 +30,11 @@ const Testimonials = () => {
               {data.Review}
             </small>
           </article></SwiperSlide>)
-        }
+        ) : */}
+        {/*  ( */}
+        <span className='client__review'>No Reviews Yet..</span>
+        {/* ) */}
+        {/* } */}
       </Swiper>
     </section>
 

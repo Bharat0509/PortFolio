@@ -11,12 +11,13 @@ const Header = () => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Web Developer", "Competitive Programmer"], // Strings to display
+      strings: ["Competitive Programmer", "Full Stack Developer"], // Strings to display
       // Speed settings, try diffrent values untill you get good results
-      startDelay: 200,
+      startDelay: 300,
       typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 50
+      backSpeed: 70,
+      backDelay: 70,
+      // loop: true
     });
 
     // Destropying
@@ -41,7 +42,7 @@ const Header = () => {
         <a href="#contact" className='scroll__down'>Scroll Down</a>
 
       </div>
-      
+
     </header>
   )
 }
