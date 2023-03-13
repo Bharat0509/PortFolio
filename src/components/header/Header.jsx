@@ -17,7 +17,7 @@ const Header = () => {
       typeSpeed: 100,
       backSpeed: 70,
       backDelay: 70,
-      // loop: true
+      loop: true
     });
 
     // Destropying
@@ -30,7 +30,7 @@ const Header = () => {
       <div className="container header__container">
         <h5>Hello I'm</h5>
         <h1>Bharat</h1>
-        <h5 className='text-light' ref={el}></h5>
+        <h5 className='text-light auto-write' ref={el}></h5>
 
         <CTA />
         <HeaderSocials />

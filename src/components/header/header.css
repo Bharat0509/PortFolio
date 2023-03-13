@@ -2,6 +2,7 @@ header {
     height: 45rem;
     padding-top: 5rem;
     overflow: hidden;
+
 }
 
 .header__container {
@@ -37,6 +38,10 @@ header {
     background: var(--color-primary);
 }
 
+.auto-write {
+    display: block;
+}
+
 /* =================ME=================== */
 .me {
     background: linear-gradient(90deg, #2b1f7900, #1261c3c9, #1861a500);
@@ -64,14 +69,21 @@ header {
 /* ===================MEDIA QURIES (MEDIUM DEVICES)======== */
 @media screen and (max-width:1024px) {
     header {
-        height: 120vh;
+        height: 100vh;
+    }
+
+    .header__container {
+
+        height: 100%;
+
     }
 }
 
 /* ===================MEDIA QURIES (SMALL DEVICES)======== */
 @media screen and (max-width:600px) {
     header {
-        height: 120vh;
+        height: 100vh;
+
     }
 
     .header__socials, .scroll__down {
